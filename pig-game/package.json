@@ -1,0 +1,15 @@
+{
+  "name": "piggame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "compile-sass": "node-sass main.scss styles.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

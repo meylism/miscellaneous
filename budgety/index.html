@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Budgety</title>
+</head>
+<body>
+    <header class="header">
+        <span class="header__date-now" id="date-now">Date Now</span>
+        <span class="header__remaining-money" id="money-remaining">0</span>
+        <span class="header__total header__total--income" id="total-income">
+            <span class="header__text">income</span>
+            <span class="header__added-value" id="added-value-income">0</span>
+        </span>
+        <span class="header__total header__total--expense" id="total-expense">
+            <span class="header__text">expense</span>
+            <span class="header__added-value" id="added-value-expense">0</span>
+            <span class="header__percentage header__percentage--expense" id="total-percentage-expense">--</span>
+        </span>
+    </header>
+
+    <section class="form">
+        <select name="" class="form__type" id="form-type">
+            <option value="income" selected>+</option>
+            <option value="expense">-</option>
+        </select>
+        <input type="text" class="form__description" id="form-description" placeholder="Add description" required>
+        <input type="number" class="form__amount" id="form-amount" placeholder="Amount" required>
+        <div class="form__button" id="form-button"><i class="icon ion-ios-checkmark-circle-outline"></i></div>
+    </section>
+
+    <section class="container">
+        <div class="container__income">
+            <h1 class="container__header">Income</h1>
+        </div>
+        <div class="container__expense">
+            <h1 class="container__header container__header-expense">Expense</h1>
+        </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
+
+<!--
+<div class="item item--income" id="income-0">
+    <span class="item__description">Description</span>
+    <span class="item__amount">120000$</span>
+    <i class="item__delete icon ion-ios-close-circle-outline"></i>
+</div>
+
+<div class="item item--expense" id="expense-0">
+    <span class="item__description">Description</span>
+    <span class="item__amount">120000$</span>
+    <span class="item__percentage">--</span>
+    <i class="item__delete icon ion-ios-close-circle-outline"></i>
+</div>
+-->

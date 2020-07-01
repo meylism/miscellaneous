@@ -1,0 +1,253 @@
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 3%;
+  }
+
+  .header-text-box {
+    width: 80%;
+    margin-left: 1%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+  .steps {
+    padding-bottom: 15px;
+  }
+
+  .steps div {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    font-size: 110%;
+    margin-right: 10px;
+  }
+
+  .box-steps:last-child {
+    padding-top: 30px;
+    padding-left: 2%;
+  }
+
+  .city-feature .small-icon {
+    margin-right: 0;
+  }
+
+  .plans-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-nav li:first-child {
+    margin-left: 0px;
+  }
+
+  .main-nav li {
+    margin-left: 8px;
+  }
+
+  .main-logo {
+    height: 60px;
+  }
+
+  .section-features-text {
+    width: 85%;
+    margin-left: 7.5%;
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+
+  .steps {
+    padding-bottom: 10px;
+  }
+
+  .iphone-app {
+    width: 85%;
+  }
+
+  .steps div {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    font-size: 80%;
+    margin-right: 10px;
+  }
+
+  .box-steps:last-child {
+    padding-top: 30px;
+    width: 69%;
+  }
+
+  .box-steps:first-child {
+    width: 28%;
+    padding-right: 1%;
+    text-align: right;
+  }
+
+  .button-app img {
+    height: 30px;
+    width: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
+  .section-cities .col {
+    width: 48%;
+    display: block;
+  }
+
+  .section-cities .row:last-child {
+    padding: 1% 4%;
+  }
+
+  .section-testimonials .col {
+    width: 100%;
+  }
+
+  .section-testimonials .row:last-child {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    font-style: italic;
+    line-height: 24px;
+    padding: 4%;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  cite img {
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  .section-plans .col {
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+
+  .section-plans .col:first-child {
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+
+  .form-box {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  input[type="button"] {
+    padding: 7px 17px;
+  }
+
+  .plans-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-footer {
+    padding: 12px;
+    font-size: 75%;
+  }
+
+  .footer-nav li {
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /*------Main Nav--------*/
+  .main-nav {
+    display: none;
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .main-nav li {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 0;
+    font-size: 100%;
+  }
+
+  .main-nav li a:visited,
+  .main-nav li a:link {
+    border: 0;
+  }
+
+  /*--------Sticky Nav-------- */
+
+  .sticky .main-nav {
+    display: none;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+
+  .sticky .main-nav li {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 0;
+    font-size: 100%;
+  }
+
+  .sticky .main-nav li a:visited,
+  .sticky .main-nav li a:link {
+    border: 0;
+  }
+
+  .js--mobile-nav-icon {
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+
+  .js--mobile-nav-icon i {
+    color: #fff;
+    font-size: 160%;
+    float: right;
+  }
+
+  .sticky .js--mobile-nav-icon {
+    display: block;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 6px;
+  }
+
+  .sticky .js--mobile-nav-icon i {
+    color: #000;
+    font-size: 160%;
+    float: right;
+  }
+}

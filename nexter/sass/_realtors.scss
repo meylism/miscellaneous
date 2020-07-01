@@ -1,0 +1,58 @@
+.realtors {
+    background-color: $color-secondary;
+    grid-column: col-start 7/full-end;
+    padding: 10rem 3rem;
+    
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    align-content: center;
+    grid-gap: 2rem;
+    
+    @media only screen and (max-width: $large) {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        padding: 3.5rem 2rem;
+    }
+
+    .profile-container {
+        width: 90%;
+        margin-top: .3rem;
+        display: grid;
+        grid-gap: 0rem;
+        justify-items: start;
+        justify-content: center;
+        grid-row-gap: 2rem;
+
+        @media only screen and (max-width: $large) {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            justify-self: center;
+            justify-items: center;
+        }
+    }
+
+    & > h3 {
+        text-align: center;
+    }
+
+    .profile {
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 1.5rem;
+        align-items: center;
+
+        &__picture {
+            height: 6rem;
+            border-radius: 50%;
+        }
+
+        &__house-number {
+            font-family: initial;
+            text-transform: uppercase;
+            margin-top: .5rem;
+            color: $color-grey-light-2;
+            font-size: .9rem;
+            font-weight: 300;
+        }
+    }
+}

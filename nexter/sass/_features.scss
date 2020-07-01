@@ -1,0 +1,28 @@
+.features {
+    grid-column: center-start/center-end;
+
+    padding: 7rem 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    //justify-content: center;
+    grid-column-gap: 8rem;
+    grid-row-gap: 6rem;
+
+    .feature {
+        color: $color-grey-dark-2;
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-family: $font-display;
+            font-weight: 500;
+            
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 2.7rem;
+        }
+    }
+}

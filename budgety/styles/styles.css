@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  color: #424242;
+  font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/back.png);
+  background-size: cover;
+  text-align: center;
+  padding: 2.6rem 0 1rem 0; }
+  .header span {
+    display: block; }
+  .header > span:not(:last-child) {
+    margin-bottom: 1rem; }
+  .header__date-now {
+    color: #fff;
+    font-size: 2.5rem; }
+  .header__remaining-money {
+    font-size: 5rem;
+    color: #fff; }
+  .header__total {
+    width: 24%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1.2rem 1.1rem;
+    border-radius: 2px; }
+    .header__total--income {
+      background-color: #28B9B5; }
+    .header__total--expense {
+      background-color: #FF5049; }
+  .header__text {
+    display: inline-block !important;
+    width: 20%;
+    transform: translateY(-2px); }
+  .header__added-value {
+    display: inline-block !important;
+    width: 60% !important;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right; }
+  .header__percentage {
+    display: inline-block !important;
+    width: 9%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    padding: .2rem .1rem;
+    font-size: 1.2rem; }
+
+.form {
+  background-color: #ececec;
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%; }
+  .form > * {
+    display: inline-block; }
+    .form > *:not(:last-child) {
+      border: 1px solid #fff !important;
+      transition: border .4s;
+      height: 3.5rem;
+      border-radius: 3px;
+      border: none;
+      margin-right: 2rem;
+      font-family: inherit;
+      font-size: 1.3rem; }
+      .form > *:not(:last-child):focus {
+        outline: none;
+        border: 1px solid #28B9B5 !important; }
+  .form__type {
+    background-color: #fff;
+    width: 4rem; }
+  .form__description {
+    width: 35rem;
+    padding-left: 1.5rem; }
+  .form__amount {
+    width: 8rem;
+    padding-left: 1.5rem; }
+  .form__button {
+    color: #28B9B5;
+    font-size: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer; }
+    .form__button:active {
+      transform: translateY(2px); }
+    .form__button i {
+      display: inline-block;
+      height: 3.5rem;
+      font-weight: 300 !important; }
+
+.red > *:not(:last-child) {
+  border: 1px solid #fff;
+  transition: border .4s; }
+  .red > *:not(:last-child):focus {
+    outline: none;
+    border: 1px solid #FF5049 !important; }
+
+.red > *:last-child {
+  color: #FF5049; }
+
+.container {
+  width: 70%;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  .container > * {
+    text-align: left;
+    display: inline-block;
+    width: 48%; }
+    .container > * h1 {
+      text-transform: uppercase;
+      color: #28B9B5;
+      font-weight: 400; }
+    .container > *:last-child {
+      vertical-align: top;
+      margin-left: 2rem; }
+      .container > *:last-child h1 {
+        color: #FF5049; }
+
+.item {
+  font-size: 1.9rem;
+  padding: 1.2rem 1.5rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e4e4e4; }
+  .item > * {
+    display: inline-block; }
+  .item__description {
+    width: 60%; }
+  .item__amount {
+    text-align: right;
+    width: 29%;
+    transition: transform .3s;
+    transform: translateX(4rem);
+    color: #28B9B5; }
+  .item__delete {
+    width: 9%;
+    height: auto;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    color: #28B9B5;
+    font-size: 1.8rem;
+    text-align: right;
+    transition: opacity .3s; }
+  .item:hover .item__delete {
+    opacity: 1;
+    visibility: initial; }
+  .item:hover .item__amount {
+    transform: translateX(1rem); }
+  .item--expense {
+    vertical-align: middle; }
+    .item--expense .item__amount {
+      text-align: right;
+      width: 19%;
+      transition: transform .3s;
+      transform: translateX(4rem);
+      color: #FF5049; }
+    .item--expense .item__percentage {
+      width: 8%;
+      transition: transform .3s;
+      transform: translateX(5rem);
+      background-color: rgba(255, 80, 73, 0.3);
+      text-align: center;
+      color: #FF5049;
+      font-weight: 400;
+      border-radius: 3px;
+      font-size: 1.2rem;
+      padding: .2rem 0; }
+    .item--expense:hover .item__percentage {
+      transform: translateX(1.5rem); }
+    .item--expense:hover .item__amount {
+      transform: translateX(0.5rem); }

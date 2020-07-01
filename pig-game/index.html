@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <title>Pig Game</title>
+</head>
+<body>
+    
+<div class="board">
+    <div class="board__player board__player-1" id="bg-0">
+        <span class="board__name" id="name-0">Player 1</span>
+        <span class="board__overall-score" id="score-0">8</span>
+        <div class="board__round-score-box">
+            <span class="board__round-score-current">Current</span>
+            <span class="board__round-score" id="round-score-0">0</span>
+        </div>
+    </div>
+
+    <div class="board__player board__player-2" id="bg-1">
+        <span class="board__name" id="name-1">Player 2</span>
+        <span class="board__overall-score" id="score-1">0</span>
+        <div class="board__round-score-box">
+            <span class="board__round-score-current">Current</span>
+            <span class="board__round-score" id="round-score-1">0</span>
+        </div>
+    </div>
+
+    <button class="button button__new-game">
+        <i class="button__icon ion-ios-add-circle-outline">
+        </i>New game
+    </button>
+    <button class="button button__roll-dice">
+        <i class="button__icon ion-ios-refresh">
+        </i>Roll dice
+    </button>
+    <button class="button button__hold">
+        <i class="button__icon ion-ios-arrow-round-down">
+        </i>Hold
+    </button>
+    <input type="text" placeholder="Score limit" class="board__input-limit" id="input-limit">
+    <img src="img/dice-1.png" alt="Dice" class="board__dice" id="dice">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

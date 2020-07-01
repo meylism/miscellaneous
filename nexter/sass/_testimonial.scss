@@ -1,0 +1,41 @@
+.testimonial {
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5/full-end;
+
+    padding: 10rem;
+    font-family: $font-display;
+
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 2.5rem;
+    align-content: center;
+
+    @media only screen and (max-width: $large) {
+        grid-column: 1/-1;
+    }
+
+    @media only screen and (max-width: $small) {
+        padding: 6rem;
+    }
+
+    &__header {
+        color: $color-grey-dark-1;
+        font-size: 4.5rem;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 5rem;
+    }
+    
+    &__text {
+        color: $color-grey-dark-1;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        justify-self: start;
+
+    }
+}

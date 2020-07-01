@@ -1,0 +1,109 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    color: $color-main;
+    padding: 1.2rem 3.5rem;
+    border: none;
+
+    &::after {
+      animation-name: becomeSmaller;
+      animation-duration: .6s;
+      animation-timing-function: ease;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    animation-name: becomeLarger;
+    animation-duration: .6s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+    
+  }
+
+  &-card:link,
+  &-card:visited {
+    padding: 1.5rem 2rem;
+  }
+
+  &--white {
+    background-color: #fff;
+  
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &--green {
+    background-color: $color-gradient-second;
+    color: #fff !important;
+    
+    &::after {
+      background-color: $color-gradient-second;
+    }
+  }
+}
+
+
+.btn--animated {
+
+  &:active,
+  &:link {
+    transition: all 0.2s;
+    animation: moveUp 1.5s ease-out 1s;
+    animation-fill-mode: backwards;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.267);
+    transform: translateY(-0.1rem);
+  }
+
+  &:hover {
+    box-shadow: 0.6rem 0.6rem 1.2rem rgba(0, 0, 0, 0.267);
+    transform: translateY(-0.3rem);
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-gradient-first;
+    padding: 5px 2px;
+    border-bottom: 1px solid $color-gradient-first;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $color-gradient-first;
+    color: #fff;
+    transform: translateY(-2.5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+  }
+}

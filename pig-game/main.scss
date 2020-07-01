@@ -1,0 +1,203 @@
+$pink: #EB4D4D;
+
+@mixin absCenter {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #3f3f3f;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(#000,.3), rgba(#000,.3)),
+    url(img/back.jpg);
+    overflow: hidden;
+}
+
+.board {
+    @include absCenter;
+    border-radius: 1px;
+    height: 90vh;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(#000, 0.3);
+    position: relative;
+
+    &__player {
+        height: 100%;
+        width: 49.8%;
+        display: inline-block;
+        position: relative;
+    }
+
+    &__input-limit {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        width: 15rem;
+        border: 1px solid #868686;
+        padding: 1rem;
+        text-align: center;
+        color: inherit;
+        font-size: 1.5rem;
+
+        &::placeholder {
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: inherit;
+        }
+    }
+
+    &__name {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.5rem;
+        font-weight: 100;
+//        color: $pink;
+    }
+
+    &__overall-score {
+        display: block;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $pink;
+        font-size: 8rem;
+        font-weight: 200;
+    }
+
+    &__round-score-box {
+        display: block;
+        position: absolute;
+        height: 9rem;
+        width: 13rem;
+        background-color: $pink;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .3);
+    }
+
+    &__round-score-current {
+        display: inline-block;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    &__round-score {
+        display: inline-block;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+
+    &__dice {
+        position: absolute;
+        width: 10rem;
+        display: block;
+        left: 50%;
+        top: 30%;
+        box-shadow: 0 0 25px rgba($color: #000000, $alpha: .2);
+        transform: translateX(-50%);
+    }
+}
+
+    .button {
+        display: inline-block;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: 2.1rem;
+        color: inherit;
+        text-transform: uppercase;
+        font-family: inherit;
+        font-weight: 300;
+        transition: margin .3s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &__new-game {
+            left: 50%;
+            top: 10%;
+            transform: translateX(-50%);
+        }
+
+        &__roll-dice {
+            left: 50%;
+            bottom: 25%;
+            transform: translateX(-50%);
+        }
+
+        &__hold {
+            left: 50%;
+            bottom: 15%;
+            transform: translateX(-50%);
+        }
+
+        &__icon {
+            display: inline-block;
+            font-size: 3rem;
+            margin-right: 1.5rem;
+            font-family: inherit;
+            color: $pink;
+            transform: translateY(4px);
+            transition: margin .3s;
+        }
+
+       &:hover &__icon {
+            margin-right: 25px;
+        }
+    }
+
+    .active {
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            margin-left: 15px;
+            transform: translateY(-50%);
+            background-color: $pink;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+
+        }
+    }
+
+    .active-bg {
+        background-color: rgb(245, 245, 245);
+    }

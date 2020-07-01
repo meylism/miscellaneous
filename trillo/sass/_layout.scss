@@ -1,0 +1,84 @@
+.container {
+    margin: 5rem auto;
+    max-width: 120rem;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+    @media only screen and (max-width: $largest) {
+        margin: 0;
+        max-width: 100%;
+    }
+
+} 
+
+.header {
+    padding: 1.5rem 0;
+    background-color: #fff;
+    border-bottom: var(--line);
+
+}
+
+.sidebar {
+    flex: 0 0 18%;
+    background-color: var(--color-grey-dark-1);
+}
+
+.content {
+    flex: 1;
+    background-color: var(--color-grey-light-1);
+}
+
+.overview {
+    background-color: #fff;
+    border-bottom: var(--line);
+}
+
+.main {
+    display: flex;
+
+    @media only screen and (max-width: $small) {
+        flex-direction: column;
+    }
+}
+
+.description-container {
+    display: flex;
+    padding: 4rem;
+
+    @media only screen and (max-width: $smallest) {
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $tiny) {
+        flex-direction: column;
+    }
+    
+}
+
+.description {
+    flex: 0 0 60%;
+    flex-direction: column;
+    margin-right: 4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 4rem 3rem;
+
+    @media only screen and (max-width: $smallest) {
+        margin-right: 2rem;
+        padding: 3rem 2rem;
+        flex: 0 0 65%;
+    }
+
+    @media only screen and (max-width: $tiny) {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+}
+
+.review-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

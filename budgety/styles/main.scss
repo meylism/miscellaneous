@@ -1,0 +1,270 @@
+$blue : #28B9B5;
+$red : #FF5049;
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 62.5%;
+    font-size: 1.6rem;
+    color: rgb(66, 66, 66);
+    font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 40vh;
+    background-image: linear-gradient(rgba(#000,0.2), rgba(#000,0.2)) ,url(back.png);
+    background-size: cover;
+    text-align: center;
+    padding: 2.6rem 0 1rem 0;
+
+    span {display: block;}
+    & > span:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__date-now {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    &__remaining-money {
+        font-size: 5rem;
+        color: #fff;
+    }
+
+    &__total {
+        width: 24%;
+        height: auto;
+        position: relative;
+        background-color: #fff;
+        margin: 0 auto;
+        color: #000;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        padding: 1.2rem 1.1rem;
+        border-radius: 2px;
+
+        &--income {
+            background-color: $blue;
+        }
+        &--expense {
+            background-color: $red;
+        }
+    }
+
+    &__text {
+        display: inline-block !important;
+        width: 20%;
+        transform: translateY(-2px);
+    }
+
+    &__added-value {
+        display: inline-block !important;
+        width: 60% !important;
+        color: #fff;
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    &__percentage {
+        display: inline-block !important;
+        width: 9%;
+        background-image: linear-gradient(rgba(#fff,.3), rgba(#fff,.3));
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        padding: .2rem .1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.form {
+    background-color: rgb(236, 236, 236);
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+
+    & > * {
+        display: inline-block;
+        &:not(:last-child) {
+            border: 1px solid #fff !important;
+            transition: border .4s;
+            &:focus {
+                outline: none;
+                border: 1px solid $blue !important;
+            }
+        
+
+            height: 3.5rem;
+            border-radius: 3px;
+            border: none;
+            margin-right: 2rem;
+            font-family: inherit;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__type {
+        background-color: #fff;
+        width: 4rem;
+    }
+
+    &__description {
+        width: 35rem;
+        padding-left: 1.5rem;
+    }
+
+    &__amount {
+        width: 8rem;
+        padding-left: 1.5rem;
+    }
+
+    &__button {
+        color: $blue;
+        font-size: 35px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        
+        &:active {
+            transform: translateY(2px);
+        }
+
+        i {
+            display: inline-block;
+            height: 3.5rem;
+            font-weight: 300 !important;
+        }
+    }
+
+}
+
+.red {
+    & > * {
+        &:not(:last-child) {
+            border: 1px solid #fff;
+            transition: border .4s;
+            &:focus {
+                outline: none;
+                border: 1px solid $red !important;
+            }
+        }
+        &:last-child {
+            color :$red;
+        }        
+    }
+}
+
+.container {
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    & > * {
+        text-align: left;
+        display: inline-block;
+        width: 48%;
+
+        h1 {
+            text-transform: uppercase;
+            color: $blue;
+            font-weight: 400;
+        }
+
+        &:last-child {
+            vertical-align: top;
+            margin-left: 2rem;
+            h1 {
+                color: $red; 
+            }
+        }
+    }
+
+}
+
+.item {
+    font-size: 1.9rem;
+    padding: 1.2rem 1.5rem;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(228, 228, 228);
+
+    & > * {
+        display: inline-block;
+    }
+
+    &__description {
+        width: 60%;
+    }
+
+    &__amount {
+        text-align: right;
+        width: 29%;
+        transition: transform .3s;
+        transform: translateX(4rem);
+        color: $blue;
+    }
+
+    &__delete {
+        width: 9%;
+        height: auto;
+        display: inline-block;
+        opacity: 0;
+        visibility: hidden;
+        color: $blue;
+        font-size: 1.8rem;
+        text-align: right;
+        transition: opacity .3s;
+    }
+
+    &:hover &__delete {
+        opacity: 1;
+        visibility: initial;
+    }
+
+    &:hover &__amount {
+        transform: translateX(1rem);
+    }
+
+
+
+    &--expense {
+        vertical-align: middle;
+        .item__amount {
+            text-align: right;
+            width: 19%;
+            transition: transform .3s;
+            transform: translateX(4rem);
+            color: $red;
+        }
+
+        .item__percentage {
+            width: 8%;
+            transition: transform .3s;
+            transform: translateX(5rem);
+            background-color: rgba($red, .3);
+            text-align: center;
+            color: $red;
+            font-weight: 400;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            padding: .2rem 0;
+        }
+
+        &:hover .item__percentage {
+            transform: translateX(1.5rem);
+        }
+
+        &:hover .item__amount {
+            transform: translateX(.5rem);
+        }
+    }
+}
