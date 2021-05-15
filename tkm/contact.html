@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="checkbox" id="nav" class="navigation__checkbox">
+        <div class="navigation__background"></div>
+        <label for="nav" class="navigation__button">
+            <span class="navigation__button-icon">
+                &nbsp;
+            </span>
+        </label>
+        <nav class="navigation__list">
+            <ul class="navigation__ullist">
+                <li class="navigation__item"><a href="./index_meylismatiyev.html">Me</a></li>
+                <li class="navigation__item"><a href="./country.html">Country</a></li>
+                <li class="navigation__item"><a href="./meals.html">Meals</a></li>
+                <li class="navigation__item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="section-header section-header--contact">
+        <div class="section-header__text-box">
+            <h1 class="header-main">
+                <span class="header-main--main">Contact Us</span>
+                <span class="header-main--sub">Form</span>
+            </h1>
+            <a class="btn btn--white" href="#form">More</a>
+        </div>
+    </header>
+    <main>
+        <section class="section-form" id="form">
+            <div class="section-form__header u-margin-bottom-small">
+                <h2 class="header-secondary">Contact Form</h2>
+            </div>
+            <form class="section-form__form" name="contact" onsubmit="handleForm()">
+                <input class="section-form__info type=" type="text" name="fname" required placeholder="First name">
+                <input class="section-form__info type=" type="text" name="lname" required placeholder="Last name">
+                <input class="section-form__info type=" type="email" name="email" required placeholder="Email">
+                <textarea class="section-form__message" name="message" cols="30" rows="10" required placeholder="Message"></textarea>
+                <button type="submit" class="section-form__button btn btn--green">Send</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div>
+                <ul class="footer__list">
+                    <li><a href="./index_meylismatiyev.html">Me</a></li>
+                    <li><a href="./country.html">Country</a></li>
+                    <li><a href="./meals.html">Meals</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                Made with <span style="color: red;">&#10084;</span> in Pecs, Hungary.
+                The webpage stands as a homework for a university course and bears no copyright.
+            </div>
+        </footer>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.card {
+    display: inline-block;
+    height: 50rem;
+
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    backface-visibility: hidden;
+    transition: all .8s;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(#000, 0.25);
+
+
+    &__upper-part {
+        height: 45%;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        background-size: cover;
+        background-blend-mode: screen;
+
+        &--1 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient-first, .5), rgba($color-gradient-second, .5)),
+                url(../images/palow.jpg)
+        }
+
+        &--2 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient2-first, .5), rgba($color-gradient2-second, .5)),
+                url(../images/manty.jpeg)
+        }
+
+        &--3 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient2-first, .5), rgba($color-gradient2-second, .5)),
+                url(../images/dograma.jpg)
+        }
+
+        &--4 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient2-first, .5), rgba($color-gradient2-second, .5)),
+                url(../images/somsa.jpg)
+        }
+
+    }
+
+    &__span {
+        box-decoration-break: clone;
+        padding: .3rem 1rem;
+
+        &--1 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient-first, 0.85), rgba($color-gradient-second, 0.85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient2-first, 0.85), rgba($color-gradient2-second, 0.85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient3-first, 0.85), rgba($color-gradient3-second, 0.85));
+        }
+
+        &--4 {
+            background-image: linear-gradient(to bottom right, rgba($color-gradient3-first, 0.85), rgba($color-gradient3-second, 0.85));
+        }
+    }
+
+    &__details {
+        text-align: center;
+
+        ol {
+            display: inline-block;
+            list-style: none;
+            width: 50%;
+        }
+
+        li {
+            padding: 1rem 0;
+            font-size: 1.5rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid rgb(224, 224, 224);
+            }
+        }
+    }
+
+    h4 {
+        color: #ffa;
+        font-weight: 200;
+        font-size: 3rem;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        right: -11rem;
+        top: -8rem;
+        width: 60%;
+        text-align: right;
+    }
+}

@@ -1,0 +1,43 @@
+.section-about {
+    padding: 5rem 2rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0 5rem;
+        text-align: justify;
+    }
+}
+
+.section-awards {
+    padding: 2.5rem 7rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__name {
+        font-size: 2.3rem;
+    }
+
+    &__duration {
+        margin-top: 1rem;
+    }
+
+    &__org {
+        font-style: italic;
+    }
+
+    &__description {
+        margin-top: 1rem;
+    }
+}

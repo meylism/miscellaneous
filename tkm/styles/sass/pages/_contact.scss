@@ -1,0 +1,63 @@
+.section-form {
+    padding: 5rem 8rem;
+    background-color: rgb(238, 238, 238);
+
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0 5rem;
+        text-align: justify;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    &__info {
+        width: 30vw;
+    }
+
+    &__button {
+        width: 20rem;
+        transition: all 0.4s;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-7%);
+        }
+    }
+
+    input,
+    textarea {
+        padding: 1rem 1.2rem;
+        font-family: inherit;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: .4rem;
+        border-bottom: 3px solid transparent;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid $color-gradient-first !important;
+        }
+
+        &:hover {
+            border-bottom: 3px solid rgb(255, 187, 0);
+        }
+    }
+}
+
+.section-header--contact {
+    background-image: linear-gradient(to bottom right, rgba($color-gradient4-first, .7),
+            rgba($color-gradient4-second, .7)), url(../images/ashgabat2.jpg);
+}
+
+.header-secondary--country {
+    background-image: linear-gradient(to right, $color-gradient4-first, $color-gradient4-second);
+}

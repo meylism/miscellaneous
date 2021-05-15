@@ -1,0 +1,18 @@
+.section-header {
+  height: calc(100vh - 2.5rem);
+  background-image: linear-gradient(to bottom right, rgba($color-gradient-first, 0.4),
+      rgba($color-gradient-second, 0.4)), url(../images/computers.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+    padding: 8rem 5rem;
+    background-color: $footer-background-dark;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+    &>div {
+        width: 25vw;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        & a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: $color-gradient-first;
+            }
+        }
+    }
+
+}

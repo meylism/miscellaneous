@@ -1,0 +1,15 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My project for Web Programming 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Testing...\"",
+    "compile-sass" : "node-sass styles/sass/main.scss styles/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+.section-country {
+    padding: 5rem 4rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0 5rem;
+        text-align: justify;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        row-gap: 4rem;
+    }
+}
+
+.section-header--country {
+    background-image: linear-gradient(to bottom right, rgba($color-gradient4-first, .7),
+            rgba($color-gradient4-second, .7)), url(../images/country.jpg);
+}
+
+.header-secondary--country {
+    background-image: linear-gradient(to right, $color-gradient4-first, $color-gradient4-second);
+}

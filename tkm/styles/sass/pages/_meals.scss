@@ -1,0 +1,27 @@
+.section-meals {
+    padding: 5rem 4rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0 5rem;
+        text-align: justify;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
+}
+
+.section-header--meals {
+    background-image: linear-gradient(to bottom right, rgba($color-gradient3-first, 0.7),
+            rgba($color-gradient3-second, 0.7)), url(../images/meals.jpeg);
+}
+
+.header-secondary--meals {
+    background-image: linear-gradient(to right, $color-gradient3-first, #9b2230);
+}

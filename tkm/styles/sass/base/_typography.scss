@@ -1,0 +1,66 @@
+body {
+    font-family: "Muli", 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    //padding: 3rem;
+    color: $color-main;
+}
+
+.header-main {
+    margin-bottom: 8rem;
+    line-height: .2rem;
+
+    &--main {
+        font-size: 200%;
+        font-weight: 300;
+        display: block;
+        letter-spacing: 2rem;
+        margin-bottom: 7rem;
+        animation-name: moveInRight;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+    }
+
+    &--sub {
+        font-size: 60%;
+        font-weight: 500;
+        letter-spacing: 1.3rem;
+        display: block;
+    }
+}
+
+.header-secondary {
+    font-weight: 800;
+    font-size: 3.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-gradient-first, $color-gradient-second);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+
+}
+
+.header-tertiary {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header-quaternary {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+p {
+    line-height: 2.3rem;
+}
+
+.link--underlined {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $color-gradient-second;
+
+    &:hover {
+        color: $color-gradient-first;
+    }
+}
