@@ -5,7 +5,7 @@
   "main": "script.js",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "compile-sass": "node-sass main.scss styles.css -w"
